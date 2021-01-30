@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+/*
+.teste, .teste1,.teste2{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    display: inline-block;
+    background-color: gray;
+}
+
+.teste{
+    background-color: gray;
+}
+.teste1{
+    background-color: green;
+}
+.teste2{
+    background-color: hotpink;
+}*/
+/*
+mouse pressionado
+.teste:active{
+    background-color: black;
+}*/
+
+/*
+mouse por cima
+.teste:hover{
+    Pode ser usado qualquer coisa, largura, altura entre outros
+    background-color: black;
+}
+*/
+/*
+Foca elemento formulário
+.teste:focus{
+    background-color: chocolate;
+    
+}
+
+.testearea1{
+    display: block;
+    width: 600px;
+    height: 400px;
+}*/
+

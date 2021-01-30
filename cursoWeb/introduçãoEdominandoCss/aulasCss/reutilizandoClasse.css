@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    height: 100%;
+}
+
+.tipo1{
+    color: red;
+}
+
+.link_ {
+    font-size: 30px;
+}
+
+.tipo2 {
+    font-size: 40px;
+}
+
+/*Para níveis de especificidade a orde acaba não importando
+Essa tem maior prioridade
+a.link_ {
+
+    font-size: 30px
+}
+*/

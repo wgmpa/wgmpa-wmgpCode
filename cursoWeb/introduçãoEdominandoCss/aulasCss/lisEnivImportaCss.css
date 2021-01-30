@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body{
+    /*Largura por padrão é 100%*/
+    height: 100%;
+}
+
+.um{
+    width: 500px;
+    height: 500px;
+    background: red;
+}
+
+.um > .dois{
+    width: 300px;
+    height: 300px;
+    background: green;
+}
+
+.um > .tres{
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+
+.um > .tres >   .quatro {
+    width: 100px;
+    height: 100px;
+    background: gray;
+}
+
+
+/*não aparece nada porque a classe quatro não está diretamente na classe 1, e sim na classe 3
+.um > .quatro {
+    width: 100px;
+    height: 100px;
+    background: gray;
+}
+*/
+
+
+/*
+Código usados na Ol
+
+ol{
+    list-style-position: inside; /*Significa dentro da box
+
+}
+
+ > Marca os elementos que estão dentro da ol, seja qual for,
+ol > li {
+    color: red;
+}*/
+
+
+
+
+/*  Códigos usado na ul
+.lista .lista2{
+    list-style-position: inside;
+    list-style-type: disc;
+    margin-left: 10px;
+}
+.lista .item3 ,.lista2 .item3{
+    font-weight: bold;
+}
+
+.lista li ,.lista2 li{
+    font-size: 20px;
+    color: green;
+    margin-top: 10px;
+    
+}*/

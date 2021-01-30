@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+ 
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(84, 136, 247);
+}
+
+.cabecalho{
+    
+    height: 80px;
+    background: white;
+}
+.menu{
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 30px;
+    width: 900px;
+    text-align: center;
+
+}
+
+.menu a {
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+}

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: Tahoma;
+}
+form{
+    text-align: center;
+    width: 96%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+form fieldset{
+    padding: 10px 20px;
+}
+
+form legend{
+    font-size: 17px;
+}
+
+form input[type=text]{
+    display: inline-block;
+    margin-top: 20px;
+    width: 80%;
+    padding: 10px 30px;
+}
+form input[type=text]:focus{
+    background-color: lightgray;
+}
+/*
+form select option:nth-of-type(3){
+    color: red;
+}*/
+/*
+form select option[disabled]{
+    color: orange;
+}*/
+
+form select{
+    width:calc(80% + 26px);
+    margin-top: 20px;
+    padding: 10px 13px;
+    display: inline-block;
+}
+
+form h2{
+    margin-top: 20px;
+}
+input{
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+input span{
+        margin-left: 13px;
+        font-size: 16px;
+}
+
+form input[type=submit]{
+    margin-top: 30px;
+    border: 1;
+    border-radius: 8px;
+    background-color: gray;
+    font-size: 16px;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+form input[type=submit]:hover{
+    background-color:  green;
+}
+
+form textarea{
+    margin-top: 30px;
+    width: 80%;
+    padding: 10px 13px;
+    resize: none;
+    border: 1px solid #ccc;
+    height: 140px;
+    color: black;
+    font-size: 16px;
+}

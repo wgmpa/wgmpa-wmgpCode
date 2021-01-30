@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.artigo{
+    width: 1280px;
+    margin: 40px;
+    text-align: center;
+}
+
+.artigo h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 23px;
+
+}
+
+.artigo p{
+    margin-top: 20px;
+    color: black;
+    line-height: 20px;
+    font-size: 17px;
+    font-family: 'tahoma';
+    font-style: normal;
+    font-weight: bold;
+}

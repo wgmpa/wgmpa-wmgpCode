@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulário</title>
+    <link rel="stylesheet" href="/css/Formulario.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend> Seu pet mais feliz</legend>
+            <div><input type="text" name="nome" placeholder="Digite seu nome"></div>
+            <div></div><input type="text" name="email" placeholder="Digite seu e-mail"></div>
+
+            <div>
+                <select name="lista">
+                    <option disabled selected>Selecione o Animal de estimação</option>
+                    <option>Gato</option>
+                    <option >Cachorro</option>
+                    <option > Papagaio</option>
+                </select>
+            </div>
+
+            <h2>qual a sua Estado?</h2>
+            <div class="radio-input">
+                <div>
+                <input type="radio" name="cidade" value=""/><span>Florianopolis</span>
+            </div>
+            <div>
+                <input type="radio" name="cidade" value=""/><span>São Paulo</span>
+            </div>
+            <div>
+                <input type="radio" name="cidade" value=""><span>Rio de Janeiro</span>
+            </div>
+            </div>
+
+            <h2>qual a sua comida favorita?</h2>
+            <div class="input">
+                <div>
+                <input type="checkbox" name="cidade" value=""/><span>Florianopolis</span>
+            </div>
+            <div>
+                <input type="checkbox" name="cidade" value=""/><span>São Paulo</span>
+            </div>
+            <div>
+                <input type="checkbox" name="cidade" value=""><span>Rio de Janeiro</span>
+            </div>
+            </div>
+            <div>
+                <textarea placeholder="Possui alguma observação?"></textarea>
+            </div>
+            <div>
+                <input type="submit" name="acao" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
+
+<!--Por padrão na textarea quando criado deixa tags na mesma linha-->

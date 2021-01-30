@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+ul{
+    list-style-position: inside;
+}
+
+/*Selecionando um elemento do tipo e pela ardem declarada, ex: a segunda li
+ul li:nth-of-type(2){
+    color: red;
+}*/
+
+/* Selecionando o elemento pelo filho, atravez do valor  declarado.
+ul li:nth-child(3){
+    color: red;
+}*/
+
+.box{
+    width: 100%;
+}
+
+.box > div{
+    box-sizing: border-box;
+    float: left;
+    width: 33.33%;
+    height: 400px;
+    background-color: black;
+    border: 1px solid blue;
+}
+p::after{
+    content: Wesley;
+    background-color: blue;
+    
+}
+
+/*
+Negação, não seleciona a classe especificada
+.box div:not(.one){
+    background-color: green;
+}*/
+
+/*
+.box div:last-of-type p{
+    color: red;
+}*/
+
+/* Selecionando o ultimo elemento
+.box div:last-of-type, .box p:last-of-type{
+    background: green;}
+*/
+

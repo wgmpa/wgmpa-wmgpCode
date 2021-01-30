@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+}
+
+.box2{
+    width: 250px;
+    background-color: red;
+}
+.box > .box2 span{
+    display: inline-block;
+    width: inherit; /* inherit -> mesmo que herança*/
+    height: inherit;
+    background-color: inherit;
+}
