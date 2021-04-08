@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+
+        AngularJS -> É um framework JavaScript, extende atributos html com diretivas, e liga dados com expressoẽs.
+
+        ng-app -> diretiva que defina a aplicação AngularJs.
+        
+        ng-controller -> È uma diretiva usada para ligar o controle a uma view(DOM)
+        
+        ng-model ->diretiva que liga o  valor de de controle do html (inputs, select,textarea) para plicações de dados.
+        
+        ng-bind -> diretivas que liga aplicação de dados ao html visual
+
+        {{}} -> tudo o que está dentro dessas tag é chamado de expressões
+        
+        ng-bind="" -> uma expressão pode ser escrita dentro de uma diretiva
+    -->
+    <div ng-app="">
+        <p>Name : <input type="text" ng-model="name"></p>
+        <h1>hello {{name}}</h1>
+
+        <p>Soma de <input type="number" ng-model="number1"> <input type="number" ng-model="number2"></p>
+        <h1>{{number1}} + {{number2}} = {{number1 + number2}} </h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</body>
+</html>

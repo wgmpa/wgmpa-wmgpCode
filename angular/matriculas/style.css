@@ -1,0 +1,29 @@
+.header1{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.orgTable{
+    border: 1px solid black;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.orgTable th{
+    font-size: 20px;
+}
+
+.orgTable td{
+    font-size: 18px;
+    
+}
+
+/*Zebrar tabela*/
+.orgTable tbody tr:nth-child(odd) {
+    background-color: #CCC;}
+   
+.orgTable tbody tr:nth-child(even) {
+    background-color: #FFF;}
+       

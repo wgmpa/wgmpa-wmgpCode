@@ -1,0 +1,56 @@
+<!DOCTYPE html >
+
+<!--ng-app -> informa que é o proprietário da aplicação AngularJs -->
+<html lang="pt-BR" ng-app="myMatricula">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Link usado para chamar o framework angularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!--ng-controller -> diretiva que define o controle da aplicação, esse controle está em um arquivo js como no main.js-->
+<body ng-controller="controleMatriculados">
+    <div class="header1">
+        <h2>{{titulo}}</h2>
+
+    <table class="orgTable">
+        <tr>
+            <th></th>
+            <th>Matricula</th>
+            <th>Nome</th>
+            <th>Nota</th>
+            <th>Data Lnaçamento</th>
+        </tr>
+
+        <tr ng-class="{selecionado: aluno.selecionado}" ng-repeat="aluno in alunos">
+
+            <!--ng-bind="" ou {{}} -> onde recebe as expressões das variáveis, -->
+            <td><input type="checkbox" ng-model="aluno.selecionado"></td>
+            <td>{{aluno.matricula}}</td>
+            <td>{{aluno.nome}}</td>
+            <td>{{aluno.nota}}</td>
+            <td>{{aluno.data | date:'dd/MM/yyyy'}}</td>
+        </tr>
+    </table>
+
+    <form>
+        <!--ng-model -> serve para inserção de dados-->
+        <input type="text" ng-model="aluno.matricula" placeholder="Digite a matricula" required="true">
+        <input type="text" ng-model="aluno.nome" placeholder="Digite o nome do Aluno" required="true">
+        <input type="text" ng-model="aluno.nota" placeholder="Digite a nota do aluno" required="true">
+        <input type="date" ng-model="aluno.data"> 
+    </form>
+
+    <button ng-click="cadAluno(aluno)">Matricular</button>
+
+    <button ng-click="delAluno(alunos)" ng-show="isSelecionado(alunos)">Excluir</button>
+    </div>
+    
+<script src="main.js"></script>
+</body>
+</html>

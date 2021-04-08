@@ -1,0 +1,38 @@
+
+.header1{
+    margin: 10px auto;
+    text-align: center;
+    width: 50%;
+}
+
+.header1 input{
+    width: 60%;
+    margin: 5px;
+}
+
+.selectItem{
+    width: 60%;
+    margin: 5px;
+    background-color:lightblue;
+}
+
+/*Buttons*/
+.cadUsu{
+    background-color: green;
+    color: black;
+}
+.delUsu{
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+
+
+.selecionado{
+    background-color: lightcyan;
+}
+
+.form-control{
+    display: inline;
+    text-align: center;
+}
